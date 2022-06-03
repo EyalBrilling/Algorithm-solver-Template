@@ -18,18 +18,18 @@ based on what the client sends,it can end the communication or,based on two basi
 
 **'solver'**-a class that gets a problem from a client handler and active some type of a problem solver algorithm,and than returns the solution to the client handler. 
 
-in this project,in addition of adding this generic structure for making a problem-solver server more easier - **we implemented two types of solvers. the first one is a solver that get a string and returns the reverse of it. the second solver is called a matrix solver,and it gets a matrix,a start point and an end point- and returns the shortest path from the start to the end.**
+in this project,in addition of adding this generic structure for making a problem-solver server more easier - **we implemented two types of solvers. the first one is a solver that gets a string and returns the reverse of it. the second solver is called 'matrix solver',and it gets a matrix,a start point and an end point- and returns the shortest path from the start to the end.**
 
-In our implemention we wanted to keep the type of matrix solver generic too,for cases we want to use muilti algorithms to solve a problem. we recommend to follow this structure. in this case we implemented it with a generic search and searchables templates.
+In our implemention we wanted to keep the type of matrix solver generic,for cases where we want to use muilti algorithms to solve a problem. we recommend to follow this structure. in this case, we implemented it with a generic search and searchables templates.
 
 
-To run the program-download all the files in the project and in the main.cpp class write the following structure:
+To run the program - download all the files in the project and in the main.cpp class.then write the following structure:
 
 New Server(int port,new clientHandler(new cacheManager,new solver))
 
-as you can see,the builder of server gets a port and a client handler, and the builder of a client handler gets a cache manager and a solver.
+the builder of 'server' gets a port and a client handler, and the builder of a client handler gets a cache manager and a solver.
 
-as a last step,write server->open to open a server and start listening to any client that connects to it. the code from this point can be activeted and handle itself-it will get problems,solve them and save them in the cache manager.
+as last step,write server->open to open a server and start listening to any client that connects to it. the code from this point can be activeted and handle itself-it will get problems,solve them and save them in the cache manager.
 We recommend to try and run the example solvers we built to expereince how your own classes should run.
 
 -Project made by Sahar Ben-Yitzhak and Eyal Brilling.

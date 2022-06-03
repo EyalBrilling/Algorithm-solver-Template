@@ -4,7 +4,7 @@ The code in this project builds a server that waits for clients,reads problems f
 the sturcture of the code is built in a way that allow you to change between different implemitions, and even enables you to make your own.
 to make this possible,each part of the code handles different functions in a certain area.we implemented them in the generic way based on the **SOLID fundamentals**.
 
-in genera,there are four generic parts to the code that can be implemented in different ways:
+in general,there are four generic parts to the code that can be implemented in different ways:
 
 **'server'**- this class builds the server,handels any client that connects,and how many. all the features that a server can have are implemented in this class. 
 in our project we implemented two server types. the first one is a **serial server** that handles clients one after another.while the program listens to a client and communicate with it,any other client that wants to connect to the server,waits.

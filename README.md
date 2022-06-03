@@ -18,7 +18,7 @@ based on what the client sends,it can end the communication or,based on two basi
 
 **'solver'**-a class that gets a problem from a client handler and active some type of a problem solver algorithm,and than returns the solution to the client handler. 
 
-in this project,in addition of adding this generic structure for making a problem-solver server more easier - **we implemented two types of solvers. the first one is a solver that get a string and returns the reverse of it. the second solver is called a matrix solver,and it gets a matrix,a start point and an end point- and returns the shortest path from the start to the end. **
+in this project,in addition of adding this generic structure for making a problem-solver server more easier - **we implemented two types of solvers. the first one is a solver that get a string and returns the reverse of it. the second solver is called a matrix solver,and it gets a matrix,a start point and an end point- and returns the shortest path from the start to the end.**
 
 In our implemention we wanted to keep the type of matrix solver generic too,for cases we want to use muilti algorithms to solve a problem. we recommend to follow this structure. in this case we implemented it with a generic search and searchables templates.
 
